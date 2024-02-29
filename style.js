@@ -49,8 +49,12 @@ document.addEventListener("DOMContentLoaded", () => {
     clickSound.play();
 
     section.innerHTML = `
-      <img src="gramy-gramy.jpg">
+      <img class="reload" src="gramy-gramy.jpg" style="cursor:pointer;">
     `;
+
+    document.querySelector(".reload").addEventListener('click', function() {
+      location.reload();
+    });
 
   });
 
